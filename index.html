@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Garden Pizza Wheel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="fondo">
+                                    <img src="media/fondo.png" width="100%" alt="">
+
+        </div>
+        <div class="rectangulo">
+                        <img src="media/rectangulo.png" width="100%" alt="" class="rect-img">
+
+            <h4>Juega y gana con</h4><h2>Garden Pizza</h2>
+            <button class="spinBtn">CLICK PARA JUGAR</button>
+        
+        <div class="wheelContainer">
+            <svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed" preserveAspectRatio="xMidYMin meet">
+                <defs>
+                    <filter id="shadow" x="-100%" y="-100%" width="550%" height="550%">
+                        <feOffset in="SourceAlpha" dx="0" dy="0" result="offsetOut"></feOffset>
+                        <feGaussianBlur stdDeviation="9" in="offsetOut" result="drop" />
+                        <feColorMatrix in="drop" result="color-out" type="matrix" values="0 0 0 0   0
+              0 0 0 0   0 
+              0 0 0 0   0 
+              0 0 0 .3 0" />
+                        <feBlend in="SourceGraphic" in2="color-out" mode="normal" />
+                    </filter>
+                    <linearGradient id="grad1" x1="20%" y1="20%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color: #FFFF00 ;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FF9300 ;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <g class="mainContainer">
+                    <g class="wheel">
+                    </g>
+
+                </g>
+                <g class="centerCircle" />
+                <g class="wheelOutline" />
+                <g class="pegContainer" opacity="1">
+                    <path class="peg" fill="#EEEEEE" d="M22.139,0C5.623,0-1.523,15.572,0.269,27.037c3.392,21.707,21.87,42.232,21.87,42.232 s18.478-20.525,21.87-42.232C45.801,15.572,38.623,0,22.139,0z" />
+
+                </g>
+                <g>
+                    <circle class="peg_circle" fill="rgb(255, 196, 11)"/>
+
+                </g>
+                
+                <g class="valueContainer" />
+                <g class="centerCircleImageContainer" />
+            </svg>
+            <div class="toast">
+                <p></p>
+            </div>
+                                        <img src="media/base.png" alt="" class="bas">
+
+        </div>
+
+
+        </div>
+                                                        <img src="media/base.png"  alt="" class="base">
+
+    </div>
+ 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js'></script>
+    <script src='js/ThrowPropsPlugin.min.js'></script>
+    <script src='js/Spin2WinWheel.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
